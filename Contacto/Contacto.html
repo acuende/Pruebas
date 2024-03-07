@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Contacto.css">
+		<link href='https://fonts.googleapis.com/css?family=Hanken Grotesk' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+		<title>Contacto</title>
+	</head>
+	<header>
+		<article id="articulologo">
+			<img id="logo" src="..\Portada\logo.png" alt="logo">
+		</article>
+		<article>
+			<br>
+			<br>
+			<br>
+				<h2>El rincón de la mente</h2>
+		</article>
+		<article id="articuloboton">
+			<nav id="menu">			
+				<ul>
+					<li class="lista1"> <a href="../Portada/Portada.html" class="lista1">Inicio </a></li>
+					<li class="lista1"> <a href="../Portada/Portada.html" class="lista1">Equipo </a>
+						<ul class="lista2">
+							<li> <a href="../Portada/Portada.html">Formación </a></li>
+						</ul>
+					</li>
+					<li class="lista1"> <a  class="lista1">Intervención </a>
+						<ul class="lista3">
+							<li> <a href="../Portada/Portada.html">Psicologia <br>y psicoterapia </a></li>
+							<li class="lista4"> <a href="../Portada/Portada.html" >Sexología </a></li>
+							<li class="lista4"> <a href="../Portada/Portada.html" >Terapia de pareja </a></li>
+							<li class="lista4"> <a href="../Portada/Portada.html" >Adicciones </a></li>
+						</ul>  
+					</li>	
+					<li class="lista1"> <a href="../Investigación/Investigación.html" class="lista1">Investigación </a></li>
+					<li class="lista1"> <a class="lista1" href="../Contacto/Contacto2.html">Contacto </a> </li>
+					<li class="lista1"> <a href="../Portada/Portada.html" class="lista1">Iniciar sesión </a></li>
+				</ul>
+			</nav>
+		</article>
+					
+	</header>
+	<body>
+		<section class="modal">
+			<div class="modal-contenedor">
+				<form>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Contacte con nosotros <br> <br></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Nombre:</th> <td><input type="text" name="nombre" placeholder="Escriba su nombre"></td>
+							</tr>
+							<tr>
+								<th>Correo:</th> <td><input type="mail" name="correo" placeholder="Escriba su correo"></td>
+							</tr>
+							<tr>
+								<th>Telefono:</th> <td><input type="tel" name="nombre" placeholder="Escriba su telefono"></td>
+							</tr>
+							<tr>
+								<th>Escriba  <br> su consulta:</th> <td><textarea cols="22" rows="5"></textarea></td>
+							</tr>
+							
+							<tr>
+								<th>Elige la que mejor se adapte:</th> 
+								<th><select name="opciones" value="consulta">
+									<option> Psicología general</option>
+									<option> Terapia de Pareja</option>
+									<option> Sexología clinica</option>
+									<option> Adicciones</option>
+									<option> Otros</option>
+								</select></th> 
+							</tr>
+							
+							<tr>
+								<th>Mujer: <input type="radio" name="sexo"></th>
+								<th>Hombre: <input type="radio" name="sexo"></th>
+							</tr>
+							<tr>
+								<th><input class="botonformulario" type="submit" name="enviar" value="Enviar"></th> 
+								<th><input class="botonformulario" type="reset" name="borrar" value="Borrar"></th> 
+							</tr>
+						</tbody>
+					</table>
+				</form>
+            </div>
+				<a href="..\Portada\Portada.html" class="close">x</a>
+		</section>
+		<footer><marquee>Realizado por Alberto Cuende Mena //Fecha:10/01/2023  //Actualización:27/01/23</footer></marquee>
+	</body>
+</html>

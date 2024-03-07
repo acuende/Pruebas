@@ -1,0 +1,81 @@
+<!-- Alberto Cuende Mena -->
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Inicio</title>
+		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Hanken Grotesk' rel='stylesheet'>
+		<link rel="stylesheet" href="Portada.css">
+		<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'> <!-- Para usar una fuente hay que "cargarla" desde internet -->
+	</head>
+	<body>
+		<header>	
+			<article id="articulologo"> <!--Cargamos el logo y le damos un tamaño fijo-->
+				<img id="logo" src="logo.png" alt="logo">
+			</article>
+			<article>					
+				<br>
+				<br>
+				<br>
+				<h2>El rincón de la mente</h2>
+			</article>
+			<article id="articuloboton"> <!-- Aquí creamos las dos listas desplegables, una en equipo y otra en intervención-->											<nav id="menu">			
+				<ul>
+					<li class="lista1"> <a href="../Portada/Portada.html" class="lista1">Inicio </a></li> <!-- Todas las páginas están enlazadas mediante ruta relativa, usando "../" para llegar a la carpeta padre y "/" para acceder a la carpeta hijo -->
+					<li class="lista1"> <a href="../Equipo/AmorEspinosa/AmorEspinosa.html" class="lista1">Equipo </a>				
+						<ul class="lista2">
+							<li> <a href="../Equipo/AmorEspinosa/AmorEspinosa.html">Amor Espinosa </a></li>
+						</ul>
+					</li>							
+					<li class="lista1"> <a  class="lista1">Intervención </a>
+						<ul class="lista3">
+							<li> 				<a href="../Intervención/Intervención.html#enlacepsico">Psicologia <br>y psicoterapia </a></li>
+							<li class="lista4"> <a href="../Intervención/Intervención.html#asexologia">Sexología </a></li>
+							<li class="lista4"> <a href="../Intervención/Intervención.html#aterapia">Terapia de pareja </a></li>
+							<li class="lista4"> <a href="../Intervención/Intervención.html#aadiciones">Adicciones </a></li>						
+						</ul>  
+					</li>	
+					<li class="lista1"> <a href="../Investigación/investigación.html" class="lista1">Investigación </a></li>
+					<li class="lista1"> <a class="lista1" href="../Contacto/Contacto.html">Contacto </a> </li>
+					<li class="lista1"> <a href="../Login/Login.html" class="lista1">Iniciar sesión </a></li>
+				</ul>
+			</nav>
+			</article>				
+		</header> <!-- Con esto finalizamos la cabecera, la cual repetiremos en toda la página web-->
+				<br class="clearfloat">	<!-- Con esto lipiamos el float-->
+		<section>
+			<div> <!-- Aquí pondremos un ejemplo del uso de una marquesina -->
+				<marquee><span id="noticia"  >Ultimas novedades:</span><a href="https://www.abc.es/bienestar/psicologia-sexo/sexualidad/abci-estas-claves-para-tener-relacion-pareja-sana-y-duradera-202301230025_noticia.html" 
+				target="_blank"><span id="noticia2">claves para tener una relación de pareja sana y duradera</span></a></marquee>
+			</div>
+			<article id="información"> <!-- En esta sección tenemos un pequeño resumen de lo que se ofrece-->
+				<h2>"Un deseo no cambia nada, una decisión lo cambia todo"</h2>
+					<br>
+						<p>La terapia psicológica promueve el bienestar.</p>
+				<h2>¿Que ofrecemos?</h2>
+					<ol> <!-- Lista ordenada -->
+						<li>Tratamiento personalizado</li>
+						<li>Compromiso y confianza</li>
+						<li>Seguimiento de los progresos</li>
+					</ol>
+				<h2>¿Que tratamos?</h2>
+					<ol> <!-- Lista ordenada -->
+						<li>Psicología general</li>
+						<li>Sexología</li>
+						<li>Terapia de pareja</li>
+						<li>Adicciones</li>
+					</ol>
+			</article>
+			<article id="mapa"> <!-- Aquí disponemos de un mapa para saber como llegar-->
+				<h2>¿Donde Estamos?</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.0855436607467!2d-5.669304753917754!3d40.97352382883332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f26240c3c5377%3A0xede80213f90f4a42!2sColegio%20Salesiano%20San%20Jos%C3%A9%20(Pizarrales)!5e0!3m2!1ses!2ses!4v1674725547243!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</article>
+		</section>
+		<footer><marquee>Realizado por Alberto Cuende Mena //Fecha:10/01/2023  //Actualización:27/01/23</footer></marquee> 
+			<!-- El footer está pensado como una marquesina -->
+	</body>
+</html>
+
+			  
+

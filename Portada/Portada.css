@@ -1,0 +1,176 @@
+/* Alberto Cuende Mena */
+* {  /*Con esto eliminamos todo el espacio en de los elementos y la página web*/
+	margin: 0px;
+	padding: 0px; 
+	outline: 0;
+	box-sizing:border-box; /* Usado para que los bordes de las cajas no sobresalgan del tamaño que les he fijado*/
+	font-family:'Hanken Grotesk';
+}
+body{
+	background-color:#b2d9e1;
+}
+header{
+	background-color:#ECFEFE;
+	height:160px; 
+}
+#logo{
+	width:200px;
+}
+#articulologo{
+	float:left;
+	width:20%;
+	outline: 0;
+}
+h2{
+	font-family: 'Caveat';
+	font-size: 40px;
+	color:#136b97;
+}
+#articuloboton{
+	float:left;
+	width:80%;
+}
+a{	
+	color:#136b97;
+}
+#menu{
+	text-align: center;
+	font-size: 20px;
+	width: 840px;
+	margin:-50px auto; /* auto sirve para el width*/
+	float:right;	
+}
+#menu ul li { 
+/* después de un ID, class o una etiqueta, si se colocan otras después SIN COMAS 
+(ul li) significa que hace referencia solo a esos li que estén dentro del id y 
+después de un ul  */
+	width: auto;
+}
+#menu ul { /* Mismo caso que el anterior*/ 
+	list-style-type: none;
+}
+#menu ul li a { /* Esto modifica los enlaces de la lista desordenada, dando el formato que me nos interese*/
+	display: block;  /* Usado para que los enlaces salgan uno debajo de otro*/
+	text-decoration: none;
+	color: #136b97;
+	background-color:#9ccbd8;
+	border:2px solid #9ccbd8;
+	cursor: pointer; /* Coloca uin cursor al seleccionar los enlaces*/
+	position: relative; /* relativo lo uso para que el elemento se desplace desde el anterior elemento, no desde toda la página*/
+	border-radius: 10px;
+	width:auto;
+	padding:10px;
+}
+#menu ul li ul li a {
+	margin-top:40px;
+	width: auto; /* auto sirve para el width y lo centra*/
+	padding: 8px 0px;
+	border-top-color: transparent;
+	position:relative;
+	z-index:3; /* Posición de los objetos en la página */
+}
+#menu ul li ul {
+	display: none; /* Esto sirve para "esconder" lo que queramos, en este caso es la lista desplegable;*/
+}
+#menu ul li .lista1 { 
+	float: left;
+	margin-right: 1px;
+}
+#menu ul li a .lista1, #menu ul li a .lista2, #menu ul li a .lista3 { /* Esto modifica las dos listas, la lista 1 y la 2 */
+	display: block; /* las listas saldrán debajo y con position relative se posicionan desde la anterior*/
+	position: relative;
+}
+#menu ul li:hover { /* Esta etiqueta sirve para cambiar el estilo de un elemento cuando pasamos el cursor sobre el*/
+	position: relative;
+}
+#menu ul li a:hover, #menu ul li:hover a.lista1 {
+	background-color: #6CC;
+	color: white;
+	position: relative;
+	border-color: #136b97;
+}
+#menu ul li:hover  ul.lista2, #menu ul li a:hover  ul.lista2,#menu ul li:hover  ul.lista3, #menu ul li a:hover  ul.lista3  {	/* Con esto conseguimos que las listas escondidas se desplieguen en bloque al pasar el cursor por los hover, por ejemplo en la lista 3: al pasar por el enlace con el cursor se despliega la lista 3 */
+	display: block; 
+	position: absolute; 
+	left: 0px;  /* Con esto decimos que se tienen que desplegar en bloque justo debajo con 0 de margen a la izquiera*/
+	z-index:2;
+}
+#menu ul li ul li a:hover {
+	border-color: #136b97;
+	position: relative;
+}
+.lista3{
+	margin-left:150px;
+	margin-top:10px;
+}
+.lista2{
+	margin-left:70px;
+	margin-top:10px;
+}
+.lista4{
+	margin-top:-32px;
+}
+.clearfloat{ /* Con esto borramos el float del logo*/
+	clear:both;
+}
+marquee{
+	background-color:#ECFEFE;
+	z-index:1;		/* Con esta etiqueta le damos la prioridad más baja por lo que cualquier elemento que queramos que esté por encima como por ejemplo UNA LISTA no se descuadre*/
+	margin-top:10px;		
+}
+#noticia{
+	color: #136b97;
+	font-weight:bold;
+	font-size:20px;
+}
+#noticia2{
+	text-decoration:none;
+	color: #136b97;
+	font-style:italic;
+	font-size:20px;
+}
+#información{
+	position: absolute;
+	top:30%;
+	left:20%;
+	font-family: 'Caveat';
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	justify-content:center;
+	width: 620px;
+	text-align:center;
+	padding-bottom:20px;
+}
+p{
+	font-style:italic;
+	font-weight:bold;
+	font-size:20px;
+	color: #136b97;
+}
+#información ol{
+	list-style-type:none;
+}
+#mapa{
+	position: absolute;
+	top:30%;
+	left:60%;
+	font-family: 'Caveat';
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	justify-content:center;
+	width: 620px;
+	text-align:center;
+}
+footer{
+	color:#136b97;
+	position: relative;
+	top:680px;
+	font-family: 'Caveat';
+}
+
+
+ 
+ 
+ 

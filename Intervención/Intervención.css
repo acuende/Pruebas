@@ -1,0 +1,205 @@
+/* Alberto Cuende Mena */
+* {
+	margin: 0px;
+	padding: 0px; 
+	outline: 0;
+	box-sizing:border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color:#b2d9e1;
+}
+header{
+	background-color:#ECFEFE;
+	height:160px; 
+}
+#logo{
+	width:200px;
+}
+#articulologo{
+	float:left;
+	width:20%;
+	outline: 0;
+}
+h2{
+	font-family: 'Caveat';
+	font-size: 40px;
+	color:#136b97;
+}
+#articuloboton{
+	float:left;
+	width:80%;
+}
+a{
+	color:#136b97;
+}
+#menu{
+	text-align: center;
+	font-size: 20px;
+	width: 840px;
+	margin:-50px auto;
+	float:right;
+}
+#menu ul li { 
+	width: auto;
+}
+#menu ul { 
+	list-style-type: none;
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #136b97;
+	background-color:#9ccbd8;
+	border:2px solid #9ccbd8;
+	cursor: pointer; 
+	position: relative; 
+	border-radius: 10px;
+	width:auto;
+	padding:10px;	
+}
+#menu ul li ul li a {
+	margin-top:40px;
+	width: auto;
+	padding: 8px 0px;
+	border-top-color: transparent;
+	position:relative;
+	z-index:3; 
+}
+#menu ul li ul {
+	display: none;
+}
+#menu ul li .lista1 { 
+	float: left;
+	margin-right: 1px;
+}
+#menu ul li a .lista1, #menu ul li a .lista2, #menu ul li a .lista3 { 
+	display: block;
+	position: relative;
+	z-index:2;
+}
+#menu ul li:hover {
+	position: relative;
+}
+#menu ul li a:hover, #menu ul li:hover a.lista1 {
+	background-color: #6CC;
+	color: white;
+	position: relative;
+	border-color: #136b97;
+}
+#menu ul li:hover  ul.lista2, #menu ul li a:hover  ul.lista2, #menu ul li:hover  ul.lista3, #menu ul li a:hover  ul.lista3 {	
+	display: block;
+	position: absolute; 
+	left: 0px; 
+	z-index:2;
+}
+#menu ul li ul li a:hover {
+	border-color: #136b97;
+	position: relative;
+}
+.lista3{
+	margin-left:150px;
+	margin-top:10px;
+}
+.lista2{
+	margin-left:70px;
+	margin-top:10px;
+}
+.lista4{
+	margin-top:-32px;
+}
+.clearfloat{
+	clear:both;
+}
+marquee{
+	background-color:#ECFEFE;
+	z-index:1;		
+	margin-top:10px;	
+}
+#noticia{
+	color: #136b97;
+	font-weight:bold;
+	font-size:20px; 
+}
+#noticia2{
+	text-decoration:none;
+	color: #136b97;
+	font-style:italic;
+	font-size:20px; 
+}
+#articulogeneral{
+	margin-top:100px;
+	padding:20px;
+}
+.sub{
+	text-decoration:underline;
+	font-weight:bold;
+	font-style:italic;
+	font-family: 'Caveat';
+	font-size: 30px;
+	color:#136b97;
+}
+#Psicologia{
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	width:400px;
+    margin: auto;
+    display: flex; /*Sirve para ajustar el contenido a la caja, en este caso texto e icono*/
+    flex-wrap: wrap; /*Esta etiqueta sirve para que todos los elementos sigan el display:flex*/
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#Sexologia{
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	width:400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+}
+#Terapiapareja{
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	width:400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: absolute ;
+    top: 170%;
+    left: 40%;
+}
+#adicciones{
+	border:#136b97 solid 1px;
+	border-radius:10px;
+	background-color:#ECFEFE;
+	width:400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    position: absolute ;
+    top: 240%;
+    left: 40%;
+}
+#Psicologia ul, #Sexologia ul, #Terapiapareja ul, #adicciones ul{
+	list-style-type:"-";
+}
+.icono{
+	width:250px;	
+}
+footer{
+	color:#136b97;
+	position: relative;
+	top:2350px;
+	font-family: 'Caveat';
+}
